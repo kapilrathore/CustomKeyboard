@@ -13,7 +13,42 @@
 		340AC93B23D705E000DBABAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 340AC93923D705E000DBABAD /* Main.storyboard */; };
 		340AC93D23D705E200DBABAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 340AC93C23D705E200DBABAD /* Assets.xcassets */; };
 		340AC94023D705E200DBABAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 340AC93E23D705E200DBABAD /* LaunchScreen.storyboard */; };
+		347668B323DAD6C600EF23F0 /* VisionDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347668B223DAD6C600EF23F0 /* VisionDemoTests.swift */; };
+		347668C123DAEDCE00EF23F0 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347668C023DAEDCE00EF23F0 /* KeyboardViewController.swift */; };
+		347668C523DAEDCE00EF23F0 /* TokoKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 347668BE23DAEDCE00EF23F0 /* TokoKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		347668CB23DB07CC00EF23F0 /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 347668CA23DB07CC00EF23F0 /* Keyboard.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		347668B523DAD6C600EF23F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 340AC92823D705E000DBABAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 340AC92F23D705E000DBABAD;
+			remoteInfo = VisionDemo;
+		};
+		347668C323DAEDCE00EF23F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 340AC92823D705E000DBABAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 347668BD23DAEDCE00EF23F0;
+			remoteInfo = TokoKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		347668C623DAEDCE00EF23F0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				347668C523DAEDCE00EF23F0 /* TokoKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		340AC93023D705E000DBABAD /* VisionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +59,31 @@
 		340AC93C23D705E200DBABAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		340AC93F23D705E200DBABAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		340AC94123D705E200DBABAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		347668B023DAD6C600EF23F0 /* VisionDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisionDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		347668B223DAD6C600EF23F0 /* VisionDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionDemoTests.swift; sourceTree = "<group>"; };
+		347668B423DAD6C600EF23F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		347668BE23DAEDCE00EF23F0 /* TokoKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TokoKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		347668C023DAEDCE00EF23F0 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		347668C223DAEDCE00EF23F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		347668CA23DB07CC00EF23F0 /* Keyboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Keyboard.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		340AC92D23D705E000DBABAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		347668AD23DAD6C600EF23F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		347668BB23DAEDCE00EF23F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				340AC93223D705E000DBABAD /* VisionDemo */,
+				347668B123DAD6C600EF23F0 /* VisionDemoTests */,
+				347668BF23DAEDCE00EF23F0 /* TokoKeyboard */,
 				340AC93123D705E000DBABAD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				340AC93023D705E000DBABAD /* VisionDemo.app */,
+				347668B023DAD6C600EF23F0 /* VisionDemoTests.xctest */,
+				347668BE23DAEDCE00EF23F0 /* TokoKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +127,25 @@
 			path = VisionDemo;
 			sourceTree = "<group>";
 		};
+		347668B123DAD6C600EF23F0 /* VisionDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				347668B223DAD6C600EF23F0 /* VisionDemoTests.swift */,
+				347668B423DAD6C600EF23F0 /* Info.plist */,
+			);
+			path = VisionDemoTests;
+			sourceTree = "<group>";
+		};
+		347668BF23DAEDCE00EF23F0 /* TokoKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				347668C023DAEDCE00EF23F0 /* KeyboardViewController.swift */,
+				347668CA23DB07CC00EF23F0 /* Keyboard.xib */,
+				347668C223DAEDCE00EF23F0 /* Info.plist */,
+			);
+			path = TokoKeyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +156,52 @@
 				340AC92C23D705E000DBABAD /* Sources */,
 				340AC92D23D705E000DBABAD /* Frameworks */,
 				340AC92E23D705E000DBABAD /* Resources */,
+				347668C623DAEDCE00EF23F0 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				347668C423DAEDCE00EF23F0 /* PBXTargetDependency */,
 			);
 			name = VisionDemo;
 			productName = VisionDemo;
 			productReference = 340AC93023D705E000DBABAD /* VisionDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		347668AF23DAD6C600EF23F0 /* VisionDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 347668B923DAD6C700EF23F0 /* Build configuration list for PBXNativeTarget "VisionDemoTests" */;
+			buildPhases = (
+				347668AC23DAD6C600EF23F0 /* Sources */,
+				347668AD23DAD6C600EF23F0 /* Frameworks */,
+				347668AE23DAD6C600EF23F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				347668B623DAD6C600EF23F0 /* PBXTargetDependency */,
+			);
+			name = VisionDemoTests;
+			productName = VisionDemoTests;
+			productReference = 347668B023DAD6C600EF23F0 /* VisionDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		347668BD23DAEDCE00EF23F0 /* TokoKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 347668C923DAEDCE00EF23F0 /* Build configuration list for PBXNativeTarget "TokoKeyboard" */;
+			buildPhases = (
+				347668BA23DAEDCE00EF23F0 /* Sources */,
+				347668BB23DAEDCE00EF23F0 /* Frameworks */,
+				347668BC23DAEDCE00EF23F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TokoKeyboard;
+			productName = TokoKeyboard;
+			productReference = 347668BE23DAEDCE00EF23F0 /* TokoKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +214,13 @@
 				ORGANIZATIONNAME = "Kapil Rathore";
 				TargetAttributes = {
 					340AC92F23D705E000DBABAD = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					347668AF23DAD6C600EF23F0 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 340AC92F23D705E000DBABAD;
+					};
+					347668BD23DAEDCE00EF23F0 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
@@ -116,6 +239,8 @@
 			projectRoot = "";
 			targets = (
 				340AC92F23D705E000DBABAD /* VisionDemo */,
+				347668AF23DAD6C600EF23F0 /* VisionDemoTests */,
+				347668BD23DAEDCE00EF23F0 /* TokoKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +253,21 @@
 				340AC94023D705E200DBABAD /* LaunchScreen.storyboard in Resources */,
 				340AC93D23D705E200DBABAD /* Assets.xcassets in Resources */,
 				340AC93B23D705E000DBABAD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		347668AE23DAD6C600EF23F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		347668BC23DAEDCE00EF23F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				347668CB23DB07CC00EF23F0 /* Keyboard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +284,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		347668AC23DAD6C600EF23F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				347668B323DAD6C600EF23F0 /* VisionDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		347668BA23DAEDCE00EF23F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				347668C123DAEDCE00EF23F0 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		347668B623DAD6C600EF23F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 340AC92F23D705E000DBABAD /* VisionDemo */;
+			targetProxy = 347668B523DAD6C600EF23F0 /* PBXContainerItemProxy */;
+		};
+		347668C423DAEDCE00EF23F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 347668BD23DAEDCE00EF23F0 /* TokoKeyboard */;
+			targetProxy = 347668C323DAEDCE00EF23F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		340AC93923D705E000DBABAD /* Main.storyboard */ = {
@@ -283,6 +452,7 @@
 		340AC94523D705E200DBABAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TMG254D42M;
@@ -301,6 +471,7 @@
 		340AC94623D705E200DBABAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TMG254D42M;
@@ -311,6 +482,84 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tokopedia.VisionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		347668B723DAD6C700EF23F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TMG254D42M;
+				INFOPLIST_FILE = VisionDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tokopedia.VisionDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VisionDemo.app/VisionDemo";
+			};
+			name = Debug;
+		};
+		347668B823DAD6C700EF23F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TMG254D42M;
+				INFOPLIST_FILE = VisionDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tokopedia.VisionDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VisionDemo.app/VisionDemo";
+			};
+			name = Release;
+		};
+		347668C723DAEDCE00EF23F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TMG254D42M;
+				INFOPLIST_FILE = TokoKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tokopedia.VisionDemo.TokoKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		347668C823DAEDCE00EF23F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TMG254D42M;
+				INFOPLIST_FILE = TokoKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tokopedia.VisionDemo.TokoKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -333,6 +582,24 @@
 			buildConfigurations = (
 				340AC94523D705E200DBABAD /* Debug */,
 				340AC94623D705E200DBABAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		347668B923DAD6C700EF23F0 /* Build configuration list for PBXNativeTarget "VisionDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				347668B723DAD6C700EF23F0 /* Debug */,
+				347668B823DAD6C700EF23F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		347668C923DAEDCE00EF23F0 /* Build configuration list for PBXNativeTarget "TokoKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				347668C723DAEDCE00EF23F0 /* Debug */,
+				347668C823DAEDCE00EF23F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
